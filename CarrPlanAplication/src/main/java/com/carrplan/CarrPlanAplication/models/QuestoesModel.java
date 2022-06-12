@@ -22,8 +22,6 @@ public class QuestoesModel {
     @Column(name = "ID_AVALIACAO", unique = true)
     private Integer idAvaliacao;
 
-    private AvaliacaoModal avaliacaoModal;
-
     @Column(name = "TEXTO", length = 200)
     private String texto;
 
@@ -39,14 +37,6 @@ public class QuestoesModel {
         this.idQuestao = idQuestao;
     }
 
-    public Integer getIdAvaliacao() {
-        return idAvaliacao;
-    }
-
-    public void setIdAvaliacao(Integer idAvaliacao) {
-        this.idAvaliacao = idAvaliacao;
-    }
-
     public String getTexto() {
         return texto;
     }
@@ -55,5 +45,16 @@ public class QuestoesModel {
         this.texto = texto;
     }
 
+    public Integer getIdAvaliacao() {
+        return idAvaliacao;
+    }
+
+    public void setIdAvaliacao(Integer idAvaliacao) {
+        this.idAvaliacao = idAvaliacao;
+    }
+
+   
+
+    
     
 }
