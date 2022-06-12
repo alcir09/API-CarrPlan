@@ -1,23 +1,23 @@
 package com.carrplan.CarrPlanAplication.DTO;
 
+import java.util.UUID;
+
 import javax.validation.constraints.NotBlank;
-
-import com.carrplan.CarrPlanAplication.models.AvaliacaoModal;
-
+import javax.validation.constraints.NotNull;
 public class QuestoesDTO{
     
-    @NotBlank
-    private AvaliacaoModal avaliacaoModal;
+    @NotNull
+    private UUID idAvaliacao;
 
     @NotBlank
     private String texto;
 
-    public AvaliacaoModal getAvaliacaoModal() {
-        return avaliacaoModal;
+    public UUID getIdAvaliacao() {
+        return idAvaliacao;
     }
 
-    public void setAvaliacaoModal(AvaliacaoModal avaliacaoModal) {
-        this.avaliacaoModal = avaliacaoModal;
+    public void setIdAvaliacao(UUID idAvaliacao) {
+        this.idAvaliacao = idAvaliacao;
     }
 
     public String getTexto() {
