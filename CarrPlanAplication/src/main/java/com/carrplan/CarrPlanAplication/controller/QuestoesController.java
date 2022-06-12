@@ -80,7 +80,7 @@ public class QuestoesController {
         return ResponseEntity.status(HttpStatus.OK).body("Questão deletada com sucesso!");
     }
 
-    @PutMapping
+    @PutMapping("/{id}")
     public ResponseEntity<Object> atualizarQuestao(@PathVariable( value = "id") UUID id, @RequestBody @Valid QuestoesDTO questoesDTO){
 
         Optional <QuestoesModel> questoesModelOptional = questoesServices.buscarQuestaoPorId(id);
