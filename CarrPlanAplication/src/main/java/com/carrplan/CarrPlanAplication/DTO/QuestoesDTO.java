@@ -1,5 +1,6 @@
 package com.carrplan.CarrPlanAplication.DTO;
 
+
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
