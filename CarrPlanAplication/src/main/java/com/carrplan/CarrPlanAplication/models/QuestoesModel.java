@@ -22,6 +22,8 @@ public class QuestoesModel {
     @Column(name = "ID_AVALIACAO", unique = true)
     private Integer idAvaliacao;
 
+    private AvaliacaoModal avaliacaoModal;
+
     @Column(name = "TEXTO", length = 200)
     private String texto;
 
